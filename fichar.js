@@ -47,7 +47,7 @@ async function login(page) {
   fs.writeFileSync(LOG_FILE, '');
   log(`Fichando: ${tipo}${teletrabajo ? ' (teletrabajo)' : ''}`);
 
-  const browser = await chromium.launch({ headless: false, slowMo: 100 });
+  const browser = await chromium.launch({ headless: true, slowMo: 100 });
   const page = await browser.newPage();
 
   try {

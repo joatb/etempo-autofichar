@@ -1,0 +1,8 @@
+[Unit]
+Description=Servicio para ejecutar script de Playwright
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/jtorrents/.local/bin/etempo_fichar.sh
+SyslogIdentifier=etempo-fichar
